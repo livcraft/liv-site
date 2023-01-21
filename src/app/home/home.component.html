@@ -1,23 +1,6 @@
 <head>
-    <link rel="stylesheet" type="text/scss" href="home.component.scss" media=”screen” />
-  </head>
-  
-  <div class="main-struct">
-    <h1><span id="name"></span></h1>
-  
-    <a target="_blank" rel="noopener" href="https://github.com/livcraft" title="github"><span id="git"></span></a>
-    <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/olivia-schirm/" title="linkedin"><span id="linkedin"></span></a>
-    <a routerLink="/projects"><span id="projects-link"></span></a>
-  
-    <div class="picture-box">
-      <div id="pic"></div>
-    </div>
-  
-    <div class="about">
-      <span id="about"></span>
-    </div>
-    
-  </div>
+  <link rel="stylesheet" type="text/scss" href="home.component.scss" media=”screen” />
+</head>
 
   <div class="divider">
   </div>
@@ -26,27 +9,18 @@
 
     <h3> projects </h3>
 
-    <div class="gallery">
-    <div class="pic-card">
-      <img src="../assets/spotthecow.jpeg" >
+    <div id="carousel-wrapper">
+      <div id="menu">
+          <div id="current-option">
+            <span id="current-option-text1" data-previous-text="" data-next-text=""><p></p></span>
+          </div>
+          <button id="previous-option"></button>
+          <button id="next-option"></button>
+        
+      </div>
+      <div id="image"></div>
     </div>
 
-    <div class="pic-card">
-      <img src="../assets/picoarcade.png" >
-    </div>
-
-    <div class="pic-card">
-      <img src="../assets/tiltydude.png" >
-    </div>
-
-    <div class="pic-card">
-      <img src="../assets/blerobot.jpg" >
-    </div>
-
-    <div class="pic-card">
-      <img src="../assets/fddr.png" >
-    </div>
-  </div>
   </div>
 
   <div class="divider">

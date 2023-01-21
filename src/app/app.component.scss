@@ -1,0 +1,48 @@
+:host {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+  }
+
+.main-struct {
+  padding: 5%;
+  text-align: center;
+  height: 350px;
+
+  h1 {
+    font-size: 24px;
+    color: rgb(30, 29, 51);
+  }
+
+  a {
+    margin-left:auto;
+    margin-right:auto;
+    padding: 1%;
+  }
+
+  .picture-box {
+    position: absolute;
+    padding: 5%;
+    float: left;
+    margin-left: 15%;
+  
+    @media (max-width:1050px){
+      display: none;
+      
+    }
+  }
+
+  .about {
+    position: absolute;
+    padding-top: 4%;
+    margin-left: 40%;
+    width: 25%;
+  
+    @media (max-width:1050px){
+      padding-top: 0%;
+      width: 50vw;
+      margin-left: 20%;
+    }
+  }
+}
