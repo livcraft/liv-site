@@ -15,7 +15,7 @@
 }
 
 .projects {
-  padding: 5%;
+  padding-top: 5%;
   text-align: center;
   height: 550px;
 
@@ -78,7 +78,7 @@ body {
       #current-option-text1 {
         font-size: 12pt;
         font-weight:normal;
-        line-height: 3rem;
+        margin-top: -100px;
         width: 220px;
         height: 200px;
         display: flex;
@@ -109,6 +109,11 @@ body {
           align-items: center;
           justify-content: flex-start;
         }
+
+        @media (max-width:720px){
+          display: none;
+          
+        }
       }
     }
 
@@ -122,6 +127,11 @@ body {
       background-size: cover;
       position: absolute;
       transform: translate(310px, 50px);
+
+      @media (max-width:720px){
+        position: relative;
+        
+      }
     }
 
     #next-option {
@@ -134,18 +144,31 @@ body {
       background-size: cover;
       position: absolute;
       transform: translate(310px, -50px) rotate(180deg);
+
+      @media (max-width:720px){
+        position: relative;
+        
+      }
     }
   }
 
   #image {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
+    margin-left: -5%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 101;
     position: absolute;
     transform: translate(140px, 0);
+
+    @media (max-width:720px){
+      height: 200px;
+      width: 200px;
+      margin-left: -100%;
+      
+    }
   }
 
   &.anim-next {

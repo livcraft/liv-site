@@ -14,7 +14,13 @@ export class HomeComponent implements OnInit {
     const text1_options = [
       "turtles",
       "hey",
-      "Is life actually real?",
+      `tilty dude
+
+
+      designed and developed a tilting-based game with PSoC Creator powered by a PSoC 5LP stick
+
+      
+      wrote an I2C library for the MPU6050 accelerometer and implemented SPI communication for the TFT screen`,
       "yuh",
       "pog"
     ];
@@ -34,7 +40,7 @@ export class HomeComponent implements OnInit {
     const optionPrevious = document.getElementById("previous-option");
     const optionNext = document.getElementById("next-option");
     
-    if (currentOptionText1) currentOptionText1.innerHTML = text1_options[i];
+    if (currentOptionText1) currentOptionText1.innerText = text1_options[i];
     if (currentOptionImage) currentOptionImage.style.backgroundImage = "url(" + image_options[i] + ")";
     
     if (optionNext) {
@@ -50,7 +56,7 @@ export class HomeComponent implements OnInit {
       }, 455);
       
       setTimeout(() => {
-        if (currentOptionText1) currentOptionText1.innerHTML = text1_options[i];
+        if (currentOptionText1) currentOptionText1.innerText = text1_options[i];
         if (carousel) carousel.classList.remove("anim-next");
       }, 650);
     };
@@ -70,7 +76,7 @@ export class HomeComponent implements OnInit {
       }, 455);
       
       setTimeout(() => {
-        if (currentOptionText1) currentOptionText1.innerHTML = text1_options[i];
+        if (currentOptionText1) currentOptionText1.innerText = text1_options[i];
         if (carousel) carousel.classList.remove("anim-previous");
       }, 650);
     };

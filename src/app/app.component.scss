@@ -21,6 +21,14 @@
     padding: 1%;
   }
 
+  a:hover {
+    opacity: 60%;
+  }
+
+  img {
+    border-radius: 200px;
+  }
+
   .picture-box {
     position: absolute;
     padding: 5%;
@@ -44,5 +52,25 @@
       width: 50vw;
       margin-left: 20%;
     }
+  }
+
+  @media (max-width:1130px){
+    height: 400px;
+  }
+
+  @media (max-width:1050px){
+    height: 350px;
+  }
+
+  @media (max-width:580px){
+    height: 400px;
+  }
+
+  @media (max-width:450px){
+    height: 450px;
+  }
+
+  @media (max-width:370px){
+    height: 550px;
   }
 }
