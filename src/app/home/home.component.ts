@@ -50,11 +50,11 @@ export class HomeComponent implements OnInit {
     ];
 
     const image_options = [
-      "../assets/spotthecow.jpeg",
-      "../assets/picoarcade.png",
-      "../assets/tiltydude.png",
-      "../assets/blerobot.jpg",
-      "../assets/fddr.png"
+      "~/../assets/spotthecow.jpeg",
+      "~/../assets/picoarcade.png",
+      "~/../assets/tiltydude.png",
+      "~/../assets/blerobot.jpg",
+      "~/../assets/fddr.png"
     ];
     var i = 0;
     const currentOptionText1 = document.getElementById("current-option-text1");
